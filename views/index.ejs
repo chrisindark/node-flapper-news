@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>node-flapper-news</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+        .vertical-center {
+            min-height: 100%;
+            /* Fallback for browsers do NOT support vh unit */
+            min-height: 100vh;
+            /* These two lines are counted as one :) */
+            display: flex;
+            align-items: center;
+        }
+        .vertical-align {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <style> .glyphicon-thumbs-up { cursor:pointer } </style>
+</head>
+
+<body ng-app="flapperNews">
+    <div ui-view="header"></div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div ui-view="container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/services/authService.js"></script>
+    <!--<script src="javascripts/services/postService.js"></script>-->
+    <script src="javascripts/controllers/navController.js"></script>
+    <!--<script src="javascripts/controllers/mainController.js"></script>-->
+    <!--<script src="javascripts/controllers/authController.js"></script>-->
+    <!--<script src="javascripts/controllers/postController.js"></script>-->
+
+</body>
+</html>
